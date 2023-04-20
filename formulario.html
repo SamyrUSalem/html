@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- lang = idioma-->
+<html>
+<body>
+<h1>Formulários</h1>
+
+<form>
+  <label for="Nome">Digite o seu nome aqui:</label>
+  <input id="Nome" type="text" placeholder="Digite" required> <br><br><!--O label é para fazer a legenda do lado o for é para dizer q essa  legenda esta relacionada com o input e quando clicar na legenda ativa a caixa para digitar. O Id no input é para identificar ele o type é o tipo desse input, no caso esse é um texto normal o placeholder é para deixar algo escrito dentro da caixa, o required quer dier q esse campo é obrigatório preencher-->
+
+  <label for="Senha">Digite a senha aqui:</label>
+  <input id="Senha" type="password" placeholder="Digite a senha" required> <br><br> <!--O type de password camufla oq o usuário esta digitando-->
+
+  <label for="Email">Digite o email aqui:</label>
+  <input id="Email" type="email" placeholder="Digite aqui" required><!--O type de email eprmite a identifcação se isso q esta sendo digitado é um email, caso n for ele recusa e pede para colocar um válido, algo assim--><br><br>
+
+  <h2>Usando o formulário de rádio</h2>
+<input type="radio" value="computador" id="pc" name="maquina">
+
+<label for="pc">Computador</label><br><br><!--O type estilo rádio quer dizer q vc pode escolher uma entre indeterminadas opções, o id é estilo os furmalarios passado, o name tem q ser igual a todos q vão fazer  parte dessa ordem, o value é para saber o valor da resposta q será enviada ao formulário e o label é para fazer a legenda ao lado -->
+
+
+
+<input type="radio" value="notebook" id="note" name="maquina" required>
+<label for="note">Notebook</label><br><br>
+
+<input type="radio" value="Teclado" id="Tecla" name="maquina">
+<label for="Tecla">Teclado</label><br><br>
+
+<h2>Usando o formulário de checkbox</h2>
+
+<input type="checkbox" id="cel" name="primeiro" value="celular">
+<label for="cel">celular</label><br><br> <!--No type de checkbox, dara para escolhar várias opções, o name tem q ser diferente para cada uma, pois pode escolher mais de uma-->
+
+<input type="checkbox" id="carr" name="segundo" value="carregador">
+<label for="carr">carregador</label><br><br>
+
+<input type="checkbox" id="cha" name="terceiro" value="chave">
+<label for="cha">chave</label><br><br>
+
+<h2>Vamo selecionar alguma coisa</h2>
+
+<select name="Comida"><!--O nome é para identificar quando o forumlario for enviado, o select é para escolher alguma opção no meu suspenso-->
+  <option selected disabled value=""> Escolha algum </option> <!--Os options são as opções q vão estar no menu suspenso, esse primeiro disabeld para ele n poder ser escolhido e esta selected para ser o primeiro a esta selecionado, como forma de orientação-->
+/  <option value="arroz"> arroz </option><!--O value é oq será enviado no formula´rio e do lado é oq esta escrito no meu suspenso-->
+  <option value="feijão"> feijão </option>
+  <option value="beterraba"> beterraba </option>
+  <option value="cheiro verde"> cheiro verde </option>
+
+</select><br><br>
+
+  <input type="submit" value="Clique para enviar"> <!--O type submite é para ter o botão para enviar os dados coletados pelo formulários e o value é oq estará escrito no botão-->
+
+<h2>Envie aquela mensagem grande</h2>
+<textarea placeholder="Digite alguma coisa" rows="10" cols="40" name="MensagemDoUsuário"></textarea><!--O textarea é para o usuario digitar um texto grande, o rows é a quantidade de linha q vai ter na caixa e o cols é a quantidade de coluna, o name é para identificar na hora de enviar-->
+
+</form>
+
+</body>
+</html>
