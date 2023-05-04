@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Google</title>
+</head>
+
+<body>
+    <!--Tudo q for digitado nesse input será pesquisado no google, o action é para por o local q essas informações serão enviadas-->
+    <form action="https://www.google.com/search">
+        <!--O q é para identificar o input q o label se refere-->
+        <label for="q">Pesquise algo</label>
+        <!--O name é o parâmetro q esse input se refere, ele significa query q é a palavra chave para realizar uma busca no google-->
+        <input type="text" id="q" name="q" placeholder="Pesquise...">
+        <input type="submit" value="Mande!">
+    </form>
+</body>
+
+</html>
